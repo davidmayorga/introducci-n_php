@@ -4,71 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operadores</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>Operadores</h1>
-   
-
+    <h1>operadores</h1>
     <?php
-    
-    $x = 9;
-    echo ("x =".$x."<br>");
-    $y = 3;
-    echo ("x =".$x."<br>");
-    $z = 5;
-    echo ("z =".$z."<br>");
-    $suma = $x + $y;
-    echo("suma =".$suma."<br>");
-    $resta = $x - $z;
-    echo("resta =".$resta."<br>");
-    $multiplicacion = $suma * $resta;
-    echo("multiplicacion =".$multiplicacion."<br>");
-    $final = $multiplicacion++;
-    echo("final =".$final."<br>");
-    echo("multiplicacion =".$multiplicacion."<br>");
-    
+    //operadores aritmeticos
+    //operadores de comparacion
+    //operadores logicos
+    //operadores de union de cadenas
+    ?>
+    <h1>operadores aritmeticos</h1>
+    <?php
+        $num1 = 1;
+        echo ("x = ".$num1."<br>");
+        $num2 = 5;
+        echo ("x = ".$num2."<br>");
+        $num3 = 4;
+        echo ("x = ".$num3."<br>");
 
-    //Operadores de comparación
-    // Igual: ==
-    // Identico: ===
-    // Diferente: !=
-    // Menor: <
-    // mayor: >
-    // Menor o  igual: <=
-    // Mayor o iguak: =>
-    echo "<h1>Operadores de comparación</h1>";
+        $suma = $num1 + $num2;
+        echo ("suma = ".$suma."<br>");
+        $resta = $num1 - $num3;
+        echo ("resta = ".$resta."<br>");
+        $multiplicacion = $suma*$resta;
+        echo ("multiplicacion = ".$multiplicacion."<br>");
+        $final = $multiplicacion++;
+        echo("final =".$final."<br>");
+
+    ?>
+    <?php
+    echo"<h1>operadores de comparacion</h1><br>";
     $x = 5;
-    $y =5;
+    $y = 5;
+    echo ($x == $y);
+    echo ($x <= $y);
+    ?>
+    <?php
+    echo"<h1>operadores logicos</h1><br>";
+    $x = 5;
+    $y = 5;
 
-    if(($x ==4) && ($y==5))
+    if(($x==4) && ($y==5));
     {
-        print("Estas en lo correcto");
+        print("estas en lo correcto");
     }
     echo"<br>";
-    if (($x ==4) OR ($y ==3))
+    if(($x==4) OR ($y==3));
     {
-        print("La segunda operación también es correcta");
+        print("la segunda estas en lo correcto");
     }
-
-    //Operadores de union de cadenas
-    // Para la Unión (concatenación) de cadenas
-    // Para la unión de cadenas se emplea el punto (.)
+    ?>
+    <?php
     echo "<h1>Operadores de union de cadenas</h1><br>";
     $t = "Ejemplo";
-    $w = "unión";
+    $w = 'union';
     $x = "de";
     $y = "cadenas";
-    $z = " ";
+    $z = ' ';
     $resultado1 = $t;
     $resultado2 = $t.$z.$x.$z.$w.$z.$x.$z.$y;
-    echo "<b><h1>";
+    echo '<b><h1>';
     echo $resultado1;
     echo "<hr>";
     echo $resultado2;
-    echo "</b></h1>";
+    echo "</b></hr>";
     ?>
-
-    
 </body>
 </html>
